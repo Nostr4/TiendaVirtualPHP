@@ -1,0 +1,450 @@
+*   {
+    margin: 0 auto;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgba(0,0,0,1) ;
+    background-image: url("imgs/1234.jpeg");
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+header {
+    border-bottom: 2px solid orange;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+    display: flex;
+}
+
+header h4 {
+    color: rgb(230, 210, 124);
+}
+
+#header-icons {
+    font-size: 3em;
+    position: absolute;
+    right: 3%;
+    margin-right: 1.5rem;
+    text-decoration: none;
+}
+
+#header-icons a {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+}
+  
+#header-icons .tooltiptext {
+    font-size: 10px;
+    visibility: hidden;
+    width: 50px;
+    background-color: rgb(245, 226, 192);
+    color: #08330b;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 2;
+    top: 100%;
+    left: 10%;
+    margin-left: -10px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+  
+#header-icons a:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.fa-solid {
+    color: #9c752c;
+    padding: 1rem;
+}
+
+.fas {
+    color: #9c752c;
+    padding: 1rem;
+}
+
+#datos-sesion {
+    font-size: 1.1em;
+    position: relative;
+    top: 15%;
+    right: 4%;
+    text-align: center;
+}
+
+#datos-sesion > a > i{
+    color: rgb(238, 60, 60);
+    padding: 0;
+}
+
+#logo {
+    width: 100%;
+}
+
+#logo a {
+    float: left;
+    width: 15%;
+    height: 100%;
+    background-image: url(imgs/logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#menu-login{
+    float: left;
+    margin-right: 2.5rem;
+}
+
+#btn-menu {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+#btn-menu>input{    
+    border-radius: 8px;
+    background-color: rgb(255, 194, 80);
+    letter-spacing: 2px;
+    width: 10%;
+}
+
+input[type="button"] {
+    border-radius: 8px;
+    background-color: rgb(255, 194, 80);
+  }
+
+input[type="submit"] {
+    border-radius: 8px;
+    background-color: rgb(255, 194, 80);
+}
+
+#main {
+    text-align: center;
+    margin-top: 1%;
+    width: 70%;
+    min-height: 45rem;
+    float: left;
+}
+
+#main h2 {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+/* nav */
+.left-column {
+    /* background-color: rgba(0, 0, 0, 0.8); */
+    width: 12%;
+    height: auto;
+    float: left;
+}
+
+nav {
+    font-size: 1.5em;
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: left;
+    margin: 0;
+  }
+  
+  nav ul {
+    width: 80%;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  nav > ul > li > a {
+    display: block;
+    padding: 10px 15px;
+    color: #fffcfc;
+    text-decoration: none;
+  }
+  
+  /* Estilo para los elementos de nivel 2 */
+  nav li ul {
+    display: none;
+    position: relative;
+    top: 50%;
+    left: 10%;
+  }
+  
+  nav li:hover > ul {
+    display: block;
+  }
+  
+  nav li ul li {
+    width: 150px;
+  }
+  
+  nav li ul li a {
+    display: block;
+    padding: 10px 15px;
+    color: #fffcfc;
+    text-decoration: none;
+  }
+  
+  nav li ul li a:hover {
+    background-color: #fffcfc;
+    color: rgba(0, 0, 0, 0.8);
+  }
+
+/* aside */
+
+#aside-letters {
+    font-size: 2em;
+}
+
+#aside-icons {
+    font-size: 2em;
+    padding: 10px;
+    text-decoration: none;
+}
+
+#aside-icons a {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+#aside-icons .tooltiptext {
+    font-size: 10px;
+    visibility: hidden;
+    width: 50px;
+    background-color: rgb(245, 226, 192);
+    color: #08330b;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 2;
+    top: 85%;
+    left: 30%;
+    margin-left: -10px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+  
+#aside-icons a:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.right-column {
+    text-align: center;
+    color: white;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 18%;
+    height: auto;
+    float: right;
+}
+
+
+/* footer */
+
+#footer {
+    border-top: 2px solid orange;
+}
+
+.footer-flex {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-flex h2 {
+    margin-top: 10px;
+}
+
+.left-align {
+    padding: 10px;
+    text-align: left;
+    margin: 0 50px;
+    color: rgb(230, 210, 124);
+}
+
+.footer-flex>div>ul {
+    list-style: none;
+}
+
+.footer-flex>div>ul li {
+    position: relative;
+    top: 20px;
+    right: 45px;
+    margin-top: 2px;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+/* tables */
+
+.table {
+    background-color: rgba(255, 165, 0, 0.5);
+    font-size: 0.85em;
+    text-align: center;
+    width: 90%;
+    height: 5%;
+    border: 1px solid black;
+}
+
+.table td {
+    text-align: center;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    width: 10%;
+    height: 30px;
+    max-width: 20px;
+    border: 1px solid black;
+}
+
+.table a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.table-cabecera {
+    text-align: center;
+    width: 90%;
+}
+
+.table-cabecera td {
+    background-color: #FF9933;
+    border: 2px solid black;
+    width: 10%;
+}
+
+.table-cabecera td button {
+    font-size: 0.95em;
+    font-weight: bold;
+    background-color: #FF9933;
+    width: 100%;
+}
+
+.table-cabeceraArticulos{
+    text-align: center;
+    width: 90%;
+}
+
+.table-cabeceraArticulos td{
+    background-color: #FF9933;
+    border: 2px solid black;
+    width: 10%;
+}
+
+.table-cabeceraArticulos td button {
+    font-size: 0.95em;
+    font-weight: bold;
+    background-color: #FF9933;
+    width: 100%;
+}
+
+td.tdedit {
+    background-color: green;
+}
+
+td.tdborrar {
+    background-color: red;
+}
+
+.table-cabeceraArticulosUser {
+    text-align: center;
+    width: 90%;
+}
+
+.table-cabeceraArticulosUser td{
+    background-color: #FF9933;
+    border: 2px solid black;
+    width: 10%;
+}
+
+.table-cabeceraArticulosUser td button {
+    font-size: 0.95em;
+    font-weight: bold;
+    background-color: #FF9933;
+    width: 100%;
+}
+
+
+.table-ArticulosUser{
+    text-align: center;
+    width: 90%;
+}
+
+.table-ArticulosUser td{
+    text-align: center;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    width: 10%;
+    max-width: 20px;
+    border: 1px solid black;
+}
+
+
+.table-login {
+    border: 0 auto;
+    text-align: center;
+}
+
+.table-login a {
+    color: #3c3d0a;
+    font-style: bold;
+}
+
+/* --------- */
+
+.buscar {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+
+#header {
+    width: 100%;
+}
+
+#main-container {
+    width: 100%;
+}
+
+#footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 10rem;
+}
+
+h1,h3 {
+    text-align: center;
+}
+
+#carrito2 {
+    padding-top: 15px;
+    border-top: 2px solid orange;
+    color: #fffcfc;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+#carrito th {
+    font-size: 1.2em;
+}
+
+#carritoFinal {
+    width: 800px;
+    padding: 15px;
+    border-top: 2px solid orange;
+    border-bottom: 2px solid orange;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+#carritoFinal tr:last-child {
+    font-size: 1.5em;
+}
