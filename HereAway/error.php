@@ -1,9 +1,9 @@
 <?php
+session_start();
 $title = "Forbidden";
 include ("bloques/doctype.php");
                 include ("bloques/header.php");
                 include ("bloques/nav.php");
-                session_start();
                 $_SESSION = array(); 
                 session_destroy();
                 ?>
